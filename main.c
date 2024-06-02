@@ -1,19 +1,10 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
 int main(int argc, char *argv[])
 {
-	if(argc==2)
-	{
-		printf("Checking Lisence %s \n", argv[1]);
-		if(strcmp(argv[1], "AAAA-Z10N-42-OK")==0)
-		{
-			printf("Access Granted \n");
-		} else {
-			printf("Access Denied \n");
-		}
-	} else {
-		printf("Usage: <key> \n");
-	}
-	return 0;
+	int *p = (int*)malloc(4);
+	printf("%p", p);
+	return 0x0;
 }
